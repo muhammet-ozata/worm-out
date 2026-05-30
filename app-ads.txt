@@ -59,6 +59,7 @@ smartclip.net, 13564, RESELLER
 video.unrulymedia.com, 389957698, RESELLER
 video.unrulymedia.com, 657436911, RESELLER
 video.unrulymedia.com, 144138083, RESELLER
+video.unrulymedia.com, 703273072, RESELLER
 algorix.co, 54616, RESELLER, 5b394c12fea27a1d
 thunder-monetize.com, 4818959194, RESELLER
 videoheroes.tv, 212428, RESELLER, 064bc410192443d8
@@ -161,6 +162,7 @@ media.net, 8cu5l226o, RESELLER
 media.net, 8cu12aq1y, RESELLER
 media.net, 8cu355vs4, RESELLER
 media.net, 8cu9b72o6, RESELLER
+media.net, 8CU675N41, RESELLER
 
 # === Gelecekte ekleyeceğin DIRECT ilişkiler ===
 # AdMob (mükerrer hesap sorunu çözülünce):
