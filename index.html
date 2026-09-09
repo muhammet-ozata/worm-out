@@ -103,26 +103,34 @@
                 of this Privacy Policy.
             </p>
             <div class="highlight">
-                <strong>Key Point:</strong> We do <strong>not</strong> collect, store, or transmit any personal
-                information from our users. All game data is stored locally on your device only.
+                <strong>Key Point:</strong> We do <strong>not</strong> ask for or collect personal
+                information such as your name, email address or phone number, and the App does not
+                require an account to play. The App does use Google services that collect data:
+                <strong>Google AdMob</strong> for advertising (Section 5) and
+                <strong>Google Analytics for Firebase</strong> for anonymous usage measurement
+                (Section 5A). If you choose to back up your game progress, it is stored in
+                <strong>Google Cloud Firestore</strong> (Section 5B) &mdash; that choice is yours and
+                the App works fully without it.
             </div>
         </div>
 
         <!-- 2. Information We Do NOT Collect -->
         <div class="card">
             <h2>2. Information We Do NOT Collect</h2>
-            <p>We want to be completely transparent. Worm Out! does <strong>not</strong>:</p>
+            <p>Worm Out! does <strong>not</strong>:</p>
             <ul>
-                <li>Collect personal information (name, email address, phone number, physical address, etc.)</li>
-                <li>Require user registration, accounts, or login of any kind</li>
-                <li>Collect or access device identifiers for our own purposes</li>
-                <li>Use analytics or tracking tools to monitor user behavior</li>
-                <li>Collect location data (GPS, IP-based geolocation, or otherwise)</li>
+                <li>Ask for or collect your name, email address, phone number or physical address</li>
+                <li>Require registration or login in order to play</li>
                 <li>Access your device's camera, microphone, contacts, photos, or files</li>
                 <li>Collect or process any biometric data</li>
-                <li>Transmit any data to our servers (we do not operate any servers)</li>
-                <li>Share, sell, rent, or trade any user data with third parties</li>
+                <li>Collect precise (GPS) location</li>
+                <li>Include social features, chat, or user-generated content</li>
+                <li>Sell, rent, or trade your data</li>
             </ul>
+            <p>
+                What the App <strong>does</strong> collect is described in Section 5 (advertising),
+                Section 5A (usage analytics and crash reports) and Section 5B (optional cloud backup).
+            </p>
         </div>
 
         <!-- 3. Locally Stored Data -->
@@ -191,6 +199,65 @@
             </ul>
         </div>
 
+        <!-- 5A. Usage Analytics and Crash Reports -->
+        <div class="card">
+            <h2>5A. Usage Analytics and Crash Reports</h2>
+            <p>
+                The App uses <strong>Google Analytics for Firebase</strong> to understand how the game is
+                actually played, so that we can fix what is broken &mdash; for example which level people
+                get stuck on, or how often a player taps a piece that cannot move. It also uses
+                <strong>Firebase Crashlytics</strong> so that crashes are reported to us automatically.
+            </p>
+            <h3>What is recorded</h3>
+            <ul>
+                <li>Gameplay events: level started, completed or failed, with the level number, the
+                    difficulty tier, stars earned, number of wrong taps and how long the level took</li>
+                <li>Hint usage, taps on blocked pieces, levels left unfinished</li>
+                <li>Daily goal completion and day-streak length</li>
+                <li>Which screens are opened, and when an advertisement is shown</li>
+                <li>Crash and error reports, including the device state at the time of the crash</li>
+                <li>Standard technical information collected automatically by Firebase: an app-instance
+                    identifier, device model, operating system version, app version, language and
+                    country (derived from IP address; the IP address itself is not retained by
+                    Firebase for Analytics)</li>
+            </ul>
+            <h3>What is not recorded</h3>
+            <ul>
+                <li>Nothing that identifies you personally &mdash; no name, email or contact details</li>
+                <li>No contact list, no message content, no precise location</li>
+            </ul>
+            <p>
+                These events are aggregated: we look at totals and averages across all players and do not
+                use them to identify an individual. Data is processed by Google LLC as described in the
+                <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">Firebase Privacy and Security</a>
+                documentation, and is retained for up to 14 months.
+            </p>
+        </div>
+
+        <!-- 5B. Cloud Backup of Game Progress -->
+        <div class="card">
+            <h2>5B. Cloud Backup of Game Progress</h2>
+            <p>
+                So that your progress is not lost when you change or reset your device, the App can back it
+                up to <strong>Google Cloud Firestore</strong>.
+            </p>
+            <ul>
+                <li><strong>What is stored:</strong> your game progress only &mdash; stars earned per level,
+                    highest level reached, current level, day-streak and daily goal count. No personal
+                    information and no contact details.</li>
+                <li><strong>How it is identified:</strong> the App signs in anonymously to Firebase
+                    Authentication, which produces a random identifier not linked to your identity. If you
+                    choose &ldquo;Back up with Google&rdquo; in the settings, that identifier is linked to
+                    your Google account so the backup can be restored on another device. This is optional;
+                    the App works fully without it.</li>
+                <li><strong>Who can read it:</strong> only you. Security rules restrict each saved record so
+                    that it can be read and written solely by the account that created it.</li>
+                <li><strong>Device settings are not synced:</strong> sound, music, vibration, language and
+                    voice preferences stay on the device.</li>
+            </ul>
+            <p>To have your cloud backup deleted, see Section 11.</p>
+        </div>
+
         <!-- 6. Text-to-Speech -->
         <div class="card">
             <h2>6. Text-to-Speech Feature</h2>
@@ -208,7 +275,10 @@
             <p>
                 Worm Out! is designed as a general audience puzzle game and is <strong>not directed at children</strong>.
                 The App does not knowingly collect personal information from any user, including minors. The App contains
-                no social features, no chat, no user-generated content, and no behavioral tracking or user profiling.
+                no social features, no chat and no user-generated content. We do not build advertising or
+                behavioural profiles of individual players: the usage analytics described in Section 5A are
+                aggregated, and advertising is handled by Google AdMob under the settings described in
+                Section 5.
             </p>
         </div>
 
@@ -251,12 +321,22 @@
                     <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Privacy Policy</a>
                 </li>
                 <li>
+                    <strong>Google Analytics for Firebase</strong> &mdash; Anonymous usage measurement (Section 5A).
+                </li>
+                <li>
+                    <strong>Firebase Crashlytics</strong> &mdash; Automatic crash reporting (Section 5A).
+                </li>
+                <li>
+                    <strong>Firebase Authentication and Cloud Firestore</strong> &mdash; Optional cloud backup of
+                    game progress (Section 5B).
+                </li>
+                <li>
                     <strong>Google Fonts (Fredoka)</strong> &mdash; The App bundles the Fredoka font. No network
                     requests are made to Google Fonts servers at runtime; the font is embedded in the App.
                 </li>
             </ul>
             <p>
-                Apart from Google AdMob's data practices (described in Section 5), no third-party service used by the
+                All of the services above are operated by Google LLC. No other third-party service used by the
                 App collects user data.
             </p>
         </div>
@@ -265,10 +345,13 @@
         <div class="card">
             <h2>10. Data Security</h2>
             <p>
-                Since we do not collect or transmit any personal data, there is minimal data security risk associated
-                with the App. The locally stored game progress and preferences are protected by the standard security
-                measures of your device's operating system. We recommend keeping your device's operating system
-                up to date to benefit from the latest security patches.
+                We do not collect names, email addresses or other directly identifying information, so there is no
+                personal profile of you to be exposed. The analytics, advertising and backup data described in
+                Sections 5, 5A and 5B is transmitted over encrypted connections and stored by Google under its own
+                security controls; cloud backups are further restricted by security rules so that only the account
+                that created a record can read it. Game progress and preferences held on your device are protected
+                by the standard security measures of your device's operating system. We recommend keeping your
+                operating system up to date to benefit from the latest security patches.
             </p>
         </div>
 
@@ -276,8 +359,7 @@
         <div class="card">
             <h2>11. Data Retention &amp; Deletion</h2>
             <p>
-                All data stored by the App resides solely on your device. We do not retain any data on external servers.
-                You can delete all App data at any time by:
+                Game progress and preferences held on your device can be deleted at any time by:
             </p>
             <ul>
                 <li>Clearing the App's data/cache through your device's application settings</li>
@@ -285,6 +367,21 @@
             </ul>
             <p>
                 Upon deletion, all locally stored game progress and preferences are permanently removed.
+            </p>
+            <h3>Cloud backup</h3>
+            <p>
+                A cloud backup (Section 5B) is <strong>not</strong> removed by uninstalling the App. To have it
+                deleted, email
+                <a href="mailto:muhammetozata1991@gmail.com">muhammetozata1991@gmail.com</a>
+                from the Google account linked to the backup, or &mdash; if the backup was never linked to a Google
+                account &mdash; state that you would like your anonymous backup deleted and we will remove it.
+                Requests are actioned within 30 days.
+            </p>
+            <h3>Analytics and advertising</h3>
+            <p>
+                Analytics events (Section 5A) are retained by Google Analytics for Firebase for up to 14 months and
+                are then deleted automatically. Advertising data is retained by Google under its own policies; you can
+                reset or restrict your advertising identifier from your device settings (Section 5.3).
             </p>
         </div>
 
@@ -367,7 +464,7 @@
         </div>
 
         <p class="effective-date">
-            <strong>Effective Date:</strong> April 6, 2025 &nbsp;|&nbsp; <strong>Last Updated:</strong> May 11, 2026
+            <strong>Effective Date:</strong> April 6, 2025 &nbsp;|&nbsp; <strong>Last Updated:</strong> September 9, 2026
         </p>
 
         <footer>
